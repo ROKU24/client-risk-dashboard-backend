@@ -42,7 +42,7 @@ const PORT = process.env.PORT || 50001;
 
 // CORS Configuration
 app.use(cors({
-  origin: 'http://localhost:3000',  // Updated to match React's default port
+  origin: ['https://client-risk-dashboard.vercel.app', 'http://localhost:3000'],
   credentials: true,
   optionsSuccessStatus: 200
 }));
